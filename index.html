@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Happy Promise Day</title>
+<title>Happy Kiss Day</title>
 
 <style>
 body{
@@ -12,12 +12,12 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    background:linear-gradient(rgb(6, 6, 126));
+    background:linear-gradient(rgb(68, 185, 68));
     font-family:Arial, sans-serif;
 }
 /* Center Card */
 .card{
-    background:white;
+    background:rgb(231, 231, 237);
     padding:40px 60px;
     border-radius:20px;
     text-align:center;
@@ -50,7 +50,7 @@ body{
 /* Floating Hearts */
 .heart{
     position:absolute;
-    color:white;
+    color:rgb(221, 10, 10);
     font-size:20px;
     animation:float 6s linear infinite;
 }
@@ -71,26 +71,15 @@ body{
 <body>
 
 <div class="card">
-    <h1>Happy Promise Day 🫶🏻❤️</h1>
-    <h2>To My Love 🙈😘🫂💕</h2>
-    <div class="play-btn" onclick="playMusic()">Tap Here🤭
+    <h1>Happy Kiss Day 😘🧑🏻‍❤️‍💋‍🧑🫶🏻❤️</h1>
+    <h2>To My Loveable BOY💋 🙈😘🫂💕</h2>
 </div>
-</div>
-
-<!-- Background Music -->
-<audio id="bgMusic" loop>
-    <source src="song.mpeg" type="audio/mpeg">
-</audio>
-
 <script>
-function playMusic(){
-    document.getElementById("bgMusic").play();
-}
 // create floating hearts
 for(let i=0;i<40;i++){
     let heart=document.createElement("div");
     heart.className="heart";
-    heart.innerHTML="🤍";
+    heart.innerHTML="💋";
     heart.style.left=Math.random()*100+"vw";
     heart.style.fontSize=(Math.random()*20+10)+"px";
     heart.style.animationDuration=(Math.random()*5+5)+"s";
@@ -99,4 +88,5 @@ for(let i=0;i<40;i++){
 </script>
 
 </body>
+
 </html>
